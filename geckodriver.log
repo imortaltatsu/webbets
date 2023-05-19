@@ -1,0 +1,470 @@
+1683197031898	geckodriver	INFO	Listening on 127.0.0.1:34929
+1683197032316	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "--remote-debugging-port" "34447" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileDS48IE"
+Gtk-Message: 16:13:52.334: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+amdgpu: os_same_file_description couldn't determine if two DRM fds reference the same file description.
+If they do, bad things may happen!
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1683197032843	Marionette	INFO	Marionette enabled
+1683197032846	Marionette	INFO	Listening on port 35001
+Read port: 35001
+WebDriver BiDi listening on ws://127.0.0.1:34447
+1683197032995	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileDS48IE/search.json.mozlz4", (void 0)))
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:34447/devtools/browser/e2c1c86b-aa05-437a-bf69-5e75a6815af8
+1683197038154	Marionette	INFO	Stopped listening on port 35001
+1683197303387	geckodriver	INFO	Listening on 127.0.0.1:44435
+1683197303839	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "--remote-debugging-port" "51145" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofiledQ65Vf"
+Gtk-Message: 16:18:23.858: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+amdgpu: os_same_file_description couldn't determine if two DRM fds reference the same file description.
+If they do, bad things may happen!
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1683197304374	Marionette	INFO	Marionette enabled
+1683197304376	Marionette	INFO	Listening on port 37809
+Read port: 37809
+WebDriver BiDi listening on ws://127.0.0.1:51145
+1683197304493	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofiledQ65Vf/search.json.mozlz4", (void 0)))
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:51145/devtools/browser/f60c03f3-cda5-49bd-94a2-3e484849d48f
+console.error: Region.sys.mjs: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.sys.mjs", 762))
+console.error: Region.sys.mjs: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.sys.mjs", 414))
+ALSA lib conf.c:4120:(snd_config_update_r) Cannot access file /usr/share/alsa/alsa.conf
+ALSA lib seq.c:935:(snd_seq_open_noupdate) Unknown SEQ default
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+console.warn: LoginHelper(Content): "Couldn't parse specified uri about:blank with error NS_ERROR_FAILURE"
+1683197381163	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1683197382810	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+console.error: services.settings: 
+  Message: NetworkError: Network error: TypeError: NetworkError: Network request failed
+  Stack:
+    APIError@resource://services-settings/RemoteSettingsClient.sys.mjs:111:1
+NetworkError@resource://services-settings/RemoteSettingsClient.sys.mjs:115:5
+_adjustedError@resource://services-settings/RemoteSettingsClient.sys.mjs:911:14
+maybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:816:38
+
+console.error: services.settings: 
+  Message: NetworkOfflineError: Network is offline
+  Stack:
+    APIError@resource://services-settings/RemoteSettingsClient.sys.mjs:111:1
+NetworkOfflineError@resource://services-settings/RemoteSettingsClient.sys.mjs:122:5
+maybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:667:15
+remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.sys.mjs:384:22
+
+console.error: services.settings: 
+  Message: NetworkOfflineError: Network is offline
+  Stack:
+    APIError@resource://services-settings/RemoteSettingsClient.sys.mjs:111:1
+NetworkOfflineError@resource://services-settings/RemoteSettingsClient.sys.mjs:122:5
+maybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:667:15
+remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.sys.mjs:384:22
+
+console.error: services.settings: 
+  Message: NetworkOfflineError: Network is offline
+  Stack:
+    APIError@resource://services-settings/RemoteSettingsClient.sys.mjs:111:1
+NetworkOfflineError@resource://services-settings/RemoteSettingsClient.sys.mjs:122:5
+maybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:667:15
+remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.sys.mjs:384:22
+
+console.error: services.settings: 
+  Message: NetworkOfflineError: Network is offline
+  Stack:
+    APIError@resource://services-settings/RemoteSettingsClient.sys.mjs:111:1
+NetworkOfflineError@resource://services-settings/RemoteSettingsClient.sys.mjs:122:5
+maybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:667:15
+remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.sys.mjs:384:22
+
+console.error: services.settings: 
+  Message: NetworkOfflineError: Network is offline
+  Stack:
+    APIError@resource://services-settings/RemoteSettingsClient.sys.mjs:111:1
+NetworkOfflineError@resource://services-settings/RemoteSettingsClient.sys.mjs:122:5
+maybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:667:15
+remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.sys.mjs:384:22
+
+console.error: services.settings: 
+  Message: NetworkOfflineError: Network is offline
+  Stack:
+    APIError@resource://services-settings/RemoteSettingsClient.sys.mjs:111:1
+NetworkOfflineError@resource://services-settings/RemoteSettingsClient.sys.mjs:122:5
+maybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:667:15
+remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.sys.mjs:384:22
+
+console.error: services.settings: 
+  Message: NetworkOfflineError: Network is offline
+  Stack:
+    APIError@resource://services-settings/RemoteSettingsClient.sys.mjs:111:1
+NetworkOfflineError@resource://services-settings/RemoteSettingsClient.sys.mjs:122:5
+maybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:667:15
+remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.sys.mjs:384:22
+
+console.error: services.settings: 
+  Message: NetworkOfflineError: Network is offline
+  Stack:
+    APIError@resource://services-settings/RemoteSettingsClient.sys.mjs:111:1
+NetworkOfflineError@resource://services-settings/RemoteSettingsClient.sys.mjs:122:5
+maybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:667:15
+remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.sys.mjs:384:22
+
+console.error: services.settings: 
+  Message: NetworkOfflineError: Network is offline
+  Stack:
+    APIError@resource://services-settings/RemoteSettingsClient.sys.mjs:111:1
+NetworkOfflineError@resource://services-settings/RemoteSettingsClient.sys.mjs:122:5
+maybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:667:15
+remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.sys.mjs:384:22
+
+console.error: services.settings: 
+  Message: NetworkOfflineError: Network is offline
+  Stack:
+    APIError@resource://services-settings/RemoteSettingsClient.sys.mjs:111:1
+NetworkOfflineError@resource://services-settings/RemoteSettingsClient.sys.mjs:122:5
+maybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:667:15
+remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.sys.mjs:384:22
+
+console.error: services.settings: 
+  Message: NetworkOfflineError: Network is offline
+  Stack:
+    APIError@resource://services-settings/RemoteSettingsClient.sys.mjs:111:1
+NetworkOfflineError@resource://services-settings/RemoteSettingsClient.sys.mjs:122:5
+maybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:667:15
+remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.sys.mjs:384:22
+
+console.error: services.settings: 
+  Message: NetworkOfflineError: Network is offline
+  Stack:
+    APIError@resource://services-settings/RemoteSettingsClient.sys.mjs:111:1
+NetworkOfflineError@resource://services-settings/RemoteSettingsClient.sys.mjs:122:5
+maybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:667:15
+remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.sys.mjs:384:22
+
+console.error: services.settings: 
+  Message: NetworkOfflineError: Network is offline
+  Stack:
+    APIError@resource://services-settings/RemoteSettingsClient.sys.mjs:111:1
+NetworkOfflineError@resource://services-settings/RemoteSettingsClient.sys.mjs:122:5
+maybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:667:15
+remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.sys.mjs:384:22
+
+console.error: services.settings: 
+  Message: NetworkOfflineError: Network is offline
+  Stack:
+    APIError@resource://services-settings/RemoteSettingsClient.sys.mjs:111:1
+NetworkOfflineError@resource://services-settings/RemoteSettingsClient.sys.mjs:122:5
+maybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:667:15
+remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.sys.mjs:384:22
+
+console.error: services.settings: 
+  Message: NetworkOfflineError: Network is offline
+  Stack:
+    APIError@resource://services-settings/RemoteSettingsClient.sys.mjs:111:1
+NetworkOfflineError@resource://services-settings/RemoteSettingsClient.sys.mjs:122:5
+maybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:667:15
+remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.sys.mjs:384:22
+
+console.error: services.settings: 
+  Message: NetworkOfflineError: Network is offline
+  Stack:
+    APIError@resource://services-settings/RemoteSettingsClient.sys.mjs:111:1
+NetworkOfflineError@resource://services-settings/RemoteSettingsClient.sys.mjs:122:5
+maybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:667:15
+remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.sys.mjs:384:22
+
+console.error: services.settings: 
+  Message: NetworkOfflineError: Network is offline
+  Stack:
+    APIError@resource://services-settings/RemoteSettingsClient.sys.mjs:111:1
+NetworkOfflineError@resource://services-settings/RemoteSettingsClient.sys.mjs:122:5
+maybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:667:15
+remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.sys.mjs:384:22
+
+console.error: services.settings: 
+  Message: NetworkOfflineError: Network is offline
+  Stack:
+    APIError@resource://services-settings/RemoteSettingsClient.sys.mjs:111:1
+NetworkOfflineError@resource://services-settings/RemoteSettingsClient.sys.mjs:122:5
+maybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:667:15
+remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.sys.mjs:384:22
+
+console.error: services.settings: 
+  Message: NetworkOfflineError: Network is offline
+  Stack:
+    APIError@resource://services-settings/RemoteSettingsClient.sys.mjs:111:1
+NetworkOfflineError@resource://services-settings/RemoteSettingsClient.sys.mjs:122:5
+maybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:667:15
+remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.sys.mjs:384:22
+
+console.error: services.settings: 
+  Message: NetworkOfflineError: Network is offline
+  Stack:
+    APIError@resource://services-settings/RemoteSettingsClient.sys.mjs:111:1
+NetworkOfflineError@resource://services-settings/RemoteSettingsClient.sys.mjs:122:5
+maybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:667:15
+remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.sys.mjs:384:22
+
+console.error: services.settings: 
+  Message: NetworkOfflineError: Network is offline
+  Stack:
+    APIError@resource://services-settings/RemoteSettingsClient.sys.mjs:111:1
+NetworkOfflineError@resource://services-settings/RemoteSettingsClient.sys.mjs:122:5
+maybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:667:15
+remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.sys.mjs:384:22
+
+console.error: services.settings: 
+  Message: NetworkOfflineError: Network is offline
+  Stack:
+    APIError@resource://services-settings/RemoteSettingsClient.sys.mjs:111:1
+NetworkOfflineError@resource://services-settings/RemoteSettingsClient.sys.mjs:122:5
+maybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:667:15
+remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.sys.mjs:384:22
+
+console.error: services.settings: 
+  Message: NetworkOfflineError: Network is offline
+  Stack:
+    APIError@resource://services-settings/RemoteSettingsClient.sys.mjs:111:1
+NetworkOfflineError@resource://services-settings/RemoteSettingsClient.sys.mjs:122:5
+maybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:667:15
+remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.sys.mjs:384:22
+
+console.error: services.settings: 
+  Message: NetworkOfflineError: Network is offline
+  Stack:
+    APIError@resource://services-settings/RemoteSettingsClient.sys.mjs:111:1
+NetworkOfflineError@resource://services-settings/RemoteSettingsClient.sys.mjs:122:5
+maybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:667:15
+remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.sys.mjs:384:22
+
+console.error: services.settings: 
+  Message: NetworkOfflineError: Network is offline
+  Stack:
+    APIError@resource://services-settings/RemoteSettingsClient.sys.mjs:111:1
+NetworkOfflineError@resource://services-settings/RemoteSettingsClient.sys.mjs:122:5
+maybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:667:15
+remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.sys.mjs:384:22
+
+console.error: (new NetworkError("Network error: TypeError: NetworkError: Network request failed", "resource://services-settings/RemoteSettingsClient.sys.mjs", 111))
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1683198430686	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, reason: error
+1683198447107	geckodriver	INFO	Listening on 127.0.0.1:52583
+1683198447548	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "--remote-debugging-port" "56293" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile6k0TzZ"
+Gtk-Message: 16:37:27.578: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+amdgpu: os_same_file_description couldn't determine if two DRM fds reference the same file description.
+If they do, bad things may happen!
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1683198448198	Marionette	INFO	Marionette enabled
+1683198448201	Marionette	INFO	Listening on port 41867
+Read port: 41867
+WebDriver BiDi listening on ws://127.0.0.1:56293
+1683198448317	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile6k0TzZ/search.json.mozlz4", (void 0)))
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:56293/devtools/browser/d3d733d9-e67e-4cf4-ba07-0568b64081c3
+1683198451049	Marionette	INFO	Stopped listening on port 41867
+1683223301020	Marionette	INFO	Stopped listening on port 37809
+1683450864607	geckodriver	INFO	Listening on 127.0.0.1:40537
+1683450865058	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "--remote-debugging-port" "33689" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileqbgcTb"
+Gtk-Message: 14:44:25.087: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+amdgpu: os_same_file_description couldn't determine if two DRM fds reference the same file description.
+If they do, bad things may happen!
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1683450865712	Marionette	INFO	Marionette enabled
+1683450865716	Marionette	INFO	Listening on port 43183
+Read port: 43183
+WebDriver BiDi listening on ws://127.0.0.1:33689
+1683450865867	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileqbgcTb/search.json.mozlz4", (void 0)))
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:33689/devtools/browser/584eda2c-ca10-4909-be26-fbb881883edc
+ALSA lib conf.c:4120:(snd_config_update_r) Cannot access file /usr/share/alsa/alsa.conf
+ALSA lib seq.c:935:(snd_seq_open_noupdate) Unknown SEQ default
+1683450998224	geckodriver	INFO	Listening on 127.0.0.1:52193
+1683450998664	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "--remote-debugging-port" "40157" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileJMT4Xg"
+Gtk-Message: 14:46:38.692: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+amdgpu: os_same_file_description couldn't determine if two DRM fds reference the same file description.
+If they do, bad things may happen!
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1683450999343	Marionette	INFO	Marionette enabled
+1683450999346	Marionette	INFO	Listening on port 37507
+Read port: 37507
+WebDriver BiDi listening on ws://127.0.0.1:40157
+1683450999494	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileJMT4Xg/search.json.mozlz4", (void 0)))
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:40157/devtools/browser/d79f1a9c-9bac-4d34-97eb-fd555b34a36f
+ALSA lib conf.c:4120:(snd_config_update_r) Cannot access file /usr/share/alsa/alsa.conf
+ALSA lib seq.c:935:(snd_seq_open_noupdate) Unknown SEQ default
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+console.warn: LoginHelper(Content): "Couldn't parse specified uri about:blank with error NS_ERROR_FAILURE"
+1683451096728	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1683451098199	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1683451119411	Marionette	INFO	Stopped listening on port 43183
+1683451155288	geckodriver	INFO	Listening on 127.0.0.1:38985
+1683451155735	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "--remote-debugging-port" "43895" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilePyW6Yi"
+Gtk-Message: 14:49:15.771: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+amdgpu: os_same_file_description couldn't determine if two DRM fds reference the same file description.
+If they do, bad things may happen!
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1683451156416	Marionette	INFO	Marionette enabled
+1683451156418	Marionette	INFO	Listening on port 41859
+Read port: 41859
+WebDriver BiDi listening on ws://127.0.0.1:43895
+1683451156537	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilePyW6Yi/search.json.mozlz4", (void 0)))
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:43895/devtools/browser/25ae4386-9eaf-4f91-838b-ad889a6c9bca
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+console.warn: LoginHelper(Content): "Couldn't parse specified uri about:blank with error NS_ERROR_FAILURE"
+ALSA lib conf.c:4120:(snd_config_update_r) Cannot access file /usr/share/alsa/alsa.conf
+ALSA lib seq.c:935:(snd_seq_open_noupdate) Unknown SEQ default
+SourceActor threw an exception: [Exception... "Failed to open input source 'chrome://global/content/neterror/aboutNetErrorCodes.js'"  nsresult: "0x805303f4 (<unknown>)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: mainThreadFetch/< :: line 663"  data: yes]
+Stack: mainThreadFetch/<@resource://devtools/shared/DevToolsUtils.js:663:15
+mainThreadFetch@resource://devtools/shared/DevToolsUtils.js:516:10
+_fetchURLContents@resource://devtools/server/actors/utils/sources-manager.js:446:22
+urlContents@resource://devtools/server/actors/utils/sources-manager.js:410:17
+_resurrectSource@resource://devtools/server/actors/thread.js:2142:35
+addAllSources@resource://devtools/server/actors/thread.js:1474:14
+watch@resource://devtools/server/actors/resources/sources.js:78:17
+watchResources@resource://devtools/server/actors/resources/index.js:312:19
+addSessionDataEntry@resource://devtools/server/actors/targets/session-data-processors/resources.js:11:21
+addSessionDataEntry@resource://devtools/server/actors/targets/base-target-actor.js:41:23
+_addSessionDataEntry@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.sys.mjs:528:24
+receiveMessage@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.sys.mjs:437:21
+Line: 663, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 663: Failed to open input source 'chrome://global/content/neterror/aboutNetErrorCodes.js'
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1683923561004	geckodriver	INFO	Listening on 127.0.0.1:32779
+1683923561448	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "--remote-debugging-port" "39255" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileLL2WdS"
+Gtk-Message: 02:02:41.471: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+amdgpu: os_same_file_description couldn't determine if two DRM fds reference the same file description.
+If they do, bad things may happen!
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1683923562157	Marionette	INFO	Marionette enabled
+1683923562162	Marionette	INFO	Listening on port 39821
+Read port: 39821
+WebDriver BiDi listening on ws://127.0.0.1:39255
+1683923562331	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:39255/devtools/browser/1e0c47a4-2172-4bbf-841c-2f496bd99065
+ALSA lib conf.c:4120:(snd_config_update_r) Cannot access file /usr/share/alsa/alsa.conf
+ALSA lib seq.c:935:(snd_seq_open_noupdate) Unknown SEQ default
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2397))
+1683924963799	geckodriver	INFO	Listening on 127.0.0.1:35323
+1683924964256	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "--remote-debugging-port" "48241" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileuSVzJi"
+Gtk-Message: 02:26:04.280: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+amdgpu: os_same_file_description couldn't determine if two DRM fds reference the same file description.
+If they do, bad things may happen!
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1683924964801	Marionette	INFO	Marionette enabled
+1683924964803	Marionette	INFO	Listening on port 35883
+Read port: 35883
+WebDriver BiDi listening on ws://127.0.0.1:48241
+1683924964917	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:48241/devtools/browser/b31c3b97-b675-4edf-bc7f-7743bd10a2b7
+[Child 12731, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /build/firefox/parts/firefox/build/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 12731, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /build/firefox/parts/firefox/build/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 12731, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /build/firefox/parts/firefox/build/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 12731, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /build/firefox/parts/firefox/build/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 12731, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /build/firefox/parts/firefox/build/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 12731, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /build/firefox/parts/firefox/build/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 12731, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /build/firefox/parts/firefox/build/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 12731, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /build/firefox/parts/firefox/build/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 576: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1683924975145	Marionette	INFO	Stopped listening on port 39821
+1683924985334	geckodriver::marionette	ERROR	Failed to close browser connection: Transport endpoint is not connected (os error 107)
+ALSA lib conf.c:4120:(snd_config_update_r) Cannot access file /usr/share/alsa/alsa.conf
+ALSA lib seq.c:935:(snd_seq_open_noupdate) Unknown SEQ default
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2397))
+[Child 16139, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (DevToolsFrame, DevToolsFrameChild:destroy) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /build/firefox/parts/firefox/build/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+console.error: "Unable to find target with innerWindowId:6442450945"
+console.warn: "Already started legacy listener for root-node on server0.conn0.windowGlobal6442450956/windowGlobalTarget2"
+console.warn: "Failed to add session data entry for frame targets in browsing context" 6442450949
+console.warn: (new AbortError("Actor 'DevToolsFrame' destroyed before query 'DevToolsFrameParent:addSessionDataEntry' was resolved", (void 0)))
+[Child 16139, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (DevToolsFrame, DevToolsFrameParent:addSessionDataEntry) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /build/firefox/parts/firefox/build/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+console.warn: "Listener for event 'frame' did not return a promise."
+console.warn: "Listener for event 'frame' did not return a promise."
+console.warn: "Listener for event 'frame' did not return a promise."
+[Child 16139, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (DevToolsFrame, DevToolsFrameChild:destroy) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /build/firefox/parts/firefox/build/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+console.error: "Unable to find target with innerWindowId:6442450954"
+console.warn: "Async method failed in safeAsyncMethod" (new Error("Connection closed, pending request to server0.conn0.windowGlobal6442450965/layout21, type getGrids failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:300:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:47:19\ngetAllGrids@resource://devtools/client/fronts/layout.js:173:17\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:61:25\ngetGrids@resource://devtools/client/inspector/grids/grid-inspector.js:452:35\n", "resource://devtools/shared/protocol/Front.js", 106))
+console.warn: "Listener for event 'frame' did not return a promise."
+console.warn: "Listener for event 'frame' did not return a promise."
+console.warn: "Listener for event 'frame' did not return a promise."
+[Child 16139, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (DevToolsFrame, DevToolsFrameChild:destroy) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /build/firefox/parts/firefox/build/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+console.error: "Unable to find target with innerWindowId:6442450963"
+console.warn: "Async method failed in safeAsyncMethod" (new Error("Connection closed, pending request to server0.conn0.windowGlobal6442450974/layout21, type getGrids failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:300:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:47:19\ngetAllGrids@resource://devtools/client/fronts/layout.js:173:17\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:61:25\ngetGrids@resource://devtools/client/inspector/grids/grid-inspector.js:452:35\n", "resource://devtools/shared/protocol/Front.js", 106))
+console.warn: "Listener for event 'frame' did not return a promise."
+console.warn: "Listener for event 'frame' did not return a promise."
+console.warn: "Listener for event 'frame' did not return a promise."
