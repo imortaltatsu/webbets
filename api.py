@@ -32,8 +32,22 @@ def scrapeparimatch():
         name=match.findAll("styles_name__2QIKf styles_name-horizontal__217P1")
         df=df.append({"teams":name,"team 1 odds":a[0].text,"team 2 odds":a[1].text,"website":"parimatch"},ignore_index=True)
     browser.quit()
+    return df
 
 def scrapemagapari():
+    df=pd.DataFrame(columns=["teams","team 1 odds","team 2 odds","website"])
+    browser = webdriver.Edge()
+    browser.get('https://megapari.com/live/cricket')
+    time.sleep(10)
+    data=browser.find_element(By.CSS_SELECTOR, '#games_content')
+    soup = BeautifulSoup(data.get_attribute('innerHTML'), 'html.parser')
+    matches = soup.findAll("div",class_='dashboard-champ-content')
+    for match in matches:
+        a=match.findAll("span",class_="c-bets__inner")
+        name=match.findAll("div",class_="c-events__team")
+        df=df.append({"teams":name[0].text,"team 1 odds":a[0].text,"team 2 odds":a[1].text,"website":"megapari"},ignore_index=True)
+    browser.quit()
+    return df
 
 def scrapebetway():
     df=pd.DataFrame(columns=["teams","team 1 odds","team 2 odds","website"])
@@ -78,6 +92,15 @@ def scrapebetfair():
 app = flask.Flask(__name__)
 flask_cors.CORS(app)
 
-@app.route('/api/v1/surebets', methods=['GET'])
+@app.route('/api/v1/surebets', methods=['post'])
 def scrapeall():
+    df=scrape1xbet()
+    df=df.append(scrapeparimatch(),ignore_index=True)
+    df=df.append(scrapemagapari(),ignore_index=True)
+    df=df.append(scrapebetway(),ignore_index=True)
+    df=df.append(scrapebet365(),ignore_index=True)
+    df=df.append(scrapebetfair(),ignore_index=True)
     return df
+if __name__ == '__main__':
+    app.run(debug=True)
+
