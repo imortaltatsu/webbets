@@ -25,35 +25,39 @@ def to_json(data):
             "odds":row[6],
         }
     return json_data
-def scrape1xbet():
-    df=pd.DataFrame(columns=["teams","team 1 odds","team 2 odds","website"])
-    browser = webdriver.Edge()
-    browser.get('https://1x-bet.in/en/live/cricket')
-    time.sleep(5)
-    data=browser.find_element(By.CSS_SELECTOR, '.ui-dashboard')
-    soup = BeautifulSoup(data.get_attribute('innerHTML'), 'html.parser')
-    matches = soup.findAll(class_='ui-dashboard-champ dashboard-champ dashboard__champ ui-dashboard-champ--theme-gray')
-    for match in matches:
-        a=match.findAll(class_="market__value")
-        name=match.findAll(class_="dashboard-game-team-info dashboard-game-block__team")
-        df=df.append({"teams":name[0].text+" vs "+name[1].text,"team 1 odds":a[0].text,"team 2 odds":a[1].text,"website":"1xbet"},ignore_index=True)
-    browser.quit()
-    return df
-def scrapeparimatch():
-    df=pd.DataFrame(columns=["teams","team 1 odds","team 2 odds","website"])
-    browser = webdriver.Edge()
-    browser.get('https://parimatch-in.com/en/cricket/live')
-    time.sleep(10)
-    data=browser.find_element(By.CSS_SELECTOR, '#line-holder > div.EC_AI')
-    soup = BeautifulSoup(data.get_attribute('innerHTML'), 'html.parser')
-    matches = soup.findAll("div",class_='EC_BP')
-    for match in matches:
-        a=match.findAll(class_="styles_odd__1vusX")
-        name=match.findAll("styles_name__2QIKf styles_name-horizontal__217P1")
-        df=df.append({"teams":name,"team 1 odds":a[0].text,"team 2 odds":a[1].text,"website":"parimatch"},ignore_index=True)
-    browser.quit()
-    return df
 
+def scrape1xbet():
+    df=pd.DataFrame(columns=['teams','team1_odds','team2_odds','site'])
+    browser= webdriver.Edge()
+    browser.get('https://parimatch-in.com/en/cricket/live')
+    time.sleep(15)
+    data = browser.find_elements(By.CLASS_NAME, "EC_AI")
+    for i in data:
+        soup = BeautifulSoup(i.get_attribute('innerHTML'), 'html.parser')
+        match=soup.find_all(class_='styles_wrapper__BfdYz styles_wrapper-card-with-favorites__kCilz styles_wrapper-card__2uN8L EC_Hb')
+        for i in match:
+            name=i.find_all(class_='styles_link__1wxWs')
+            a=i.find_all(class_='styles_value__1V_3B styles_value__3bNG1') 
+            df=df.append({'teams':name[0].text,'team1_odds':a[0].text,'team2_odds':a[1].text,'site':'parimatch'},ignore_index=True)
+    browser.close()
+    return df
+def scrapeparimathc():
+    df=pd.DataFrame(columns=['teams','team1_odds','team2_odds','site'])
+    browser= webdriver.Edge()
+    browser.get('https://parimatch-in.com/en/cricket/live')
+    time.sleep(15)
+    data = browser.find_elements(By.CLASS_NAME, "EC_AI")
+    for i in data:
+    soup = BeautifulSoup(i.get_attribute('innerHTML'), 'html.parser')
+    match=soup.find_all(class_='styles_wrapper__BfdYz styles_wrapper-card-with-favorites__kCilz styles_wrapper-card__2uN8L EC_Hb')
+    for i in match:
+        name=i.find_all(class_='styles_link__1wxWs')
+        a=i.find_all(class_='styles_value__1V_3B styles_value__3bNG1')
+        for b in a:
+            print(b.text)
+        df=df.append({'teams':name[0].text+name[1].text,'team1_odds':a[0].text,'team2_odds':a[1].text,'site':'parimatch'},ignore_index=True)
+    browser.close()
+    return df
 def scrapemagapari():
     df=pd.DataFrame(columns=["teams","team 1 odds","team 2 odds","website"])
     browser = webdriver.Edge()
