@@ -6,6 +6,25 @@ import time
 import json
 from bs4 import BeautifulSoup
 from selenium import webdriver
+from
+def to_json(data):
+    json_data = {}
+    first = True
+    for row in data:
+        if first: 
+            first = not first
+            continue
+        if "+" in row[2]:continue
+        json_data[row[2].replace("\u200b","")] = {
+            "profit":{
+                "percent":row[1].split("  ")[0],
+                "interval":row[1].split("  ")[1]},
+            "datetime":row[3],
+            "event":row[4],
+            "market":row[5],
+            "odds":row[6],
+        }
+    return json_data
 def scrape1xbet():
     df=pd.DataFrame(columns=["teams","team 1 odds","team 2 odds","website"])
     browser = webdriver.Edge()
@@ -19,6 +38,7 @@ def scrape1xbet():
         name=match.findAll(class_="dashboard-game-team-info dashboard-game-block__team")
         df=df.append({"teams":name[0].text+" vs "+name[1].text,"team 1 odds":a[0].text,"team 2 odds":a[1].text,"website":"1xbet"},ignore_index=True)
     browser.quit()
+    return df
 def scrapeparimatch():
     df=pd.DataFrame(columns=["teams","team 1 odds","team 2 odds","website"])
     browser = webdriver.Edge()
@@ -62,6 +82,7 @@ def scrapebetway():
         name=match.findAll(class_="dashboard-game-team-info dashboard-game-block__team")
         df=df.append({"teams":name[0].text+" vs "+name[1].text,"team 1 odds":a[0].text,"team 2 odds":a[1].text,"website":"betway"},ignore_index=True)
     browser.quit()
+    return df
 def scrapebet365():
     df=pd.DataFrame(columns=["teams","team 1 odds","team 2 odds","website"])
     browser = webdriver.Edge()
@@ -88,6 +109,7 @@ def scrapebetfair():
         name=match.findAll(class_="dashboard-game-team-info dashboard-game-block__team")
         df=df.append({"teams":name[0].text+" vs "+name[1].text,"team 1 odds":a[0].text,"team 2 odds":a[1].text,"website":"betfair"},ignore_index=True)
     browser.quit()
+    return df
 
 app = flask.Flask(__name__)
 flask_cors.CORS(app)
@@ -100,7 +122,7 @@ def scrapeall():
     df=df.append(scrapebetway(),ignore_index=True)
     df=df.append(scrapebet365(),ignore_index=True)
     df=df.append(scrapebetfair(),ignore_index=True)
-    return df
+    return df.to_json(orient='records')
 if __name__ == '__main__':
     app.run(debug=True)
 
