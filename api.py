@@ -6,7 +6,7 @@ import time
 import json
 from bs4 import BeautifulSoup
 from selenium import webdriver
-from
+from selenium.webdriver.common.by import By
 def to_json(data):
     json_data = {}
     first = True
