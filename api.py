@@ -50,7 +50,7 @@ def scrapeparimatch():
     for match in matches:
         a=match.findAll(class_="styles_odd__1vusX")
         name=match.findAll("styles_name__2QIKf styles_name-horizontal__217P1")
-        df=df.append({"teams":name,"team 1 odds":a[0].text,"team 2 odds":a[1].text,"website":"parimatch"},ignore_index=True)
+        df=df.append({"teams":name[0],"team 1 odds":a[0].text,"team 2 odds":a[1].text,"website":"parimatch"},ignore_index=True)
     browser.quit()
     return df
 
@@ -80,7 +80,7 @@ def scrapebetway():
     for match in matches:
         a=match.findAll(class_="market__value")
         name=match.findAll(class_="dashboard-game-team-info dashboard-game-block__team")
-        df=df.append({"teams":name[0].text+" vs "+name[1].text,"team 1 odds":a[0].text,"team 2 odds":a[1].text,"website":"betway"},ignore_index=True)
+        df=df.append({"teams":name[0].text+" vs "+name[1].text,"team 1 odds":a[0].text,"team 2 odds":a[1].text,"website":"1xbet"},ignore_index=True)
     browser.quit()
     return df
 def scrapebet365():
@@ -94,8 +94,9 @@ def scrapebet365():
     for match in matches:
         a=match.findAll(class_="market__value")
         name=match.findAll(class_="dashboard-game-team-info dashboard-game-block__team")
-        df=df.append({"teams":name[0].text+" vs "+name[1].text,"team 1 odds":a[0].text,"team 2 odds":a[1].text,"website":"bet365"},ignore_index=True)
+        df=df.append({"teams":name[0].text+" vs "+name[1].text,"team 1 odds":a[0].text,"team 2 odds":a[1].text,"website":"1xbet"},ignore_index=True)
     browser.quit()
+    return df
 def scrapebetfair():
     df=pd.DataFrame(columns=["teams","team 1 odds","team 2 odds","website"])
     browser = webdriver.Edge()
@@ -107,10 +108,9 @@ def scrapebetfair():
     for match in matches:
         a=match.findAll(class_="market__value")
         name=match.findAll(class_="dashboard-game-team-info dashboard-game-block__team")
-        df=df.append({"teams":name[0].text+" vs "+name[1].text,"team 1 odds":a[0].text,"team 2 odds":a[1].text,"website":"betfair"},ignore_index=True)
+        df=df.append({"teams":name[0].text+" vs "+name[1].text,"team 1 odds":a[0].text,"team 2 odds":a[1].text,"website":"1xbet"},ignore_index=True)
     browser.quit()
-    
-
+    return df
 app = flask.Flask(__name__)
 flask_cors.CORS(app)
 
