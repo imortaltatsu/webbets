@@ -80,7 +80,7 @@ def scrapebetway():
     for match in matches:
         a=match.findAll(class_="market__value")
         name=match.findAll(class_="dashboard-game-team-info dashboard-game-block__team")
-        df=df.append({"teams":name[0].text+" vs "+name[1].text,"team 1 odds":a[0].text,"team 2 odds":a[1].text,"website":"1xbet"},ignore_index=True)
+        df=df.append({"teams":name[0].text+" vs "+name[1].text,"team 1 odds":a[0].text,"team 2 odds":a[1].text,"website":"BETWAY"},ignore_index=True)
     browser.quit()
     return df
 def scrapebet365():
@@ -94,7 +94,7 @@ def scrapebet365():
     for match in matches:
         a=match.findAll(class_="market__value")
         name=match.findAll(class_="dashboard-game-team-info dashboard-game-block__team")
-        df=df.append({"teams":name[0].text+" vs "+name[1].text,"team 1 odds":a[0].text,"team 2 odds":a[1].text,"website":"1xbet"},ignore_index=True)
+        df=df.append({"teams":name[0].text+" vs "+name[1].text,"team 1 odds":a[0].text,"team 2 odds":a[1].text,"website":"BET365"},ignore_index=True)
     browser.quit()
     return df
 def scrapebetfair():
@@ -108,7 +108,7 @@ def scrapebetfair():
     for match in matches:
         a=match.findAll(class_="market__value")
         name=match.findAll(class_="dashboard-game-team-info dashboard-game-block__team")
-        df=df.append({"teams":name[0].text+" vs "+name[1].text,"team 1 odds":a[0].text,"team 2 odds":a[1].text,"website":"1xbet"},ignore_index=True)
+        df=df.append({"teams":name[0].text+" vs "+name[1].text,"team 1 odds":a[0].text,"team 2 odds":a[1].text,"website":"BETFAIR"},ignore_index=True)
     browser.quit()
     return df
 app = flask.Flask(__name__)
@@ -116,12 +116,32 @@ flask_cors.CORS(app)
 
 @app.route('/api/v1/surebets', methods=['post'])
 def scrapeall():
-    df=scrape1xbet()
-    df=df.append(scrapeparimatch(),ignore_index=True)
-    df=df.append(scrapemagapari(),ignore_index=True)
-    df=df.append(scrapebetway(),ignore_index=True)
-    df=df.append(scrapebet365(),ignore_index=True)
-    df=df.append(scrapebetfair(),ignore_index=True)
+    try:
+        df=scrape1xbet()
+    except:
+        print("1xbet failed")
+        pass
+    try:
+        df=df.append(scrapeparimatch())
+    except:
+        print("PARIMATCH failed")
+        pass
+    try:
+        df=df.append(scrapemagapari())
+    except:
+        print("MEGAPARI failed")
+        pass
+    try:
+        df=df.append(scrapebetway())
+    except:
+        print("BETWAY failed")
+        pass
+    try:
+        df=df.append(scrapebet365())
+    except:
+        print("BET365 failed")
+        pass
+    
     return df.to_json(orient='records')
 if __name__ == '__main__':
     app.run(debug=True)
